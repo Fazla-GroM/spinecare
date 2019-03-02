@@ -1,0 +1,519 @@
+/*************************
+******BASIC SETUP*********
+*************************/
+
+* {
+    margin: 0 ;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    
+}
+
+html,
+body {
+    color: rgb(85, 85, 85);
+    font-family:  'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+/****************************
+********REUSABLE*************
+****************************/
+.row {
+    /*1140px*/
+      
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section { padding: 80px 0;}
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 110%;
+    text-align: center;
+
+}
+h2::after,
+h3::after {
+    display: block;
+    height: 2px;
+    background-color: rgb(51, 204, 204);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+a:link,
+a:visited {
+    color: rgb(51, 204, 204);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(51, 204, 204);
+    padding-bottom: 1px;
+}
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+p {
+    text-align: center;
+}
+/****************************
+********BUTTONS**************
+****************************/
+.btn:link,
+.btn:visited,
+ input[type=submit]{
+    display: inline-block;
+    padding: 10px 50px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: rgb(51, 204, 204);
+    border: 1px solid rgb(51, 204, 204);
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid rgb(51, 204, 204);
+    color: rgb(51, 204, 204);
+}
+
+.btn:hover,
+.btn:active,
+ input[type=submit]:hover,
+ input[type=submit]:active {
+    background-color: rgb(44, 168, 168);
+}
+
+
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    
+    border: 1px solid rgb(51, 204, 204);
+    cursor: pointer;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid rgb(51, 204, 204);
+    color: #fff;
+}
+
+/****************************
+********HEADER**************
+****************************/
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/Resources/images/massage-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Resources/images/massage-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+     
+}
+.hero {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    width: 1140px;
+    
+    
+}
+.hero h1 {
+    font-weight: 300;
+    font-size: 180%;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero h1 strong {
+    color: rgb(51, 204, 204);
+    font-size: 300%;
+}
+
+.btn {
+    margin-top: 10%;
+}
+
+
+.logo {
+    margin-top: 25px;
+    height: 80px;
+    width: auto;
+    float: left;
+    
+}
+/****************************
+********NAV BAR**************
+****************************/
+.main-nav {  
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li {
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.main-nav li:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgb(51, 204, 204);
+    padding-bottom: 10px;
+}
+/********STICKY NAV*********/
+
+.sticky { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(206, 206, 206, 0.952);
+    -webkit-box-shadow: 0 2px 2px #e7e7e7;
+            box-shadow: 0 2px 2px #e7e7e7;
+    z-index: 9999;
+    height: 80px;
+}
+.sticky .main-nav{
+    margin-top: 25px;
+}
+
+.sticky .logo {
+    margin-top: 5px;
+    height: 65px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    
+    color:#555;
+}
+/********MOBILE NAV*******/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
+}
+/****************************
+********O nama**************
+****************************/
+.o-nama{padding-bottom: 0;margin-bottom: 30px;}
+.o-nama h2{margin-bottom: 30px;}
+.o-nama img{
+    height: 100%;
+    width: 100%;
+}
+
+.sistem-rada {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sistem-rada .col {padding: 20px 0;}
+
+.sistem-rada h3 {margin:30px 0;}
+.sistem-rada p {line-height: 145%;}
+.sistem-rada i {
+    font-size: 200%;
+    color: rgb(51, 204, 204);
+    margin-bottom: 30px;
+}
+
+/****************************
+********usluge**************
+****************************/
+.usluge {
+    
+    text-align: center;
+    
+     background-color: #f4f4f4;
+}
+.usluge h2 {
+    margin-bottom: 30px;
+} 
+.manualna{margin-top: 50px;}
+.manualna-txt{
+    float: right;
+}
+
+.manualna-txt ul,
+.elektro-txt ul{list-style: none;;}
+
+.manualna-txt ul {
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+
+.manualna-txt li,
+.elektro-txt li{margin-top: 30px;}
+
+
+
+.manualna-img{float: none;}
+.manualna-img,
+.manualna-txt,
+.elektro-txt,
+.elektro-img{
+    margin:0 auto;display: inline-block;
+}
+.manualna-img img,
+.elektro-img img{
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e7e7;
+            box-shadow: 2px 2px 2px 2px #e7e7e7;
+}
+
+.elektro-txt{float: left;}
+
+.elektro-txt h3{margin-top: 8%;}
+
+.elektro-img{float: none;}
+
+.manualna-txt i,
+.elektro-txt i{
+     font-size: 150%;
+     color: rgb(51, 204, 204);
+}
+
+/****************************
+********KONTAKT**************
+****************************/
+.kontakt {
+    background-color: #f4f4f4;
+}
+.kontakt h2 {
+    padding-bottom: 30px;
+}
+.kontakt-forma {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 60px;
+
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+
+}
+textarea {height: 100px;}
+
+*:focus {outline: none;}
+
+
+ .honeypot{display:none;}
+ /****************************
+********ISKUSTVA**************
+****************************/
+.iskustva {
+    background-color: #555;
+    color: white;
+}
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+
+}
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+
+}
+blockquote:before {
+    content: "\201c";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+cite img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/****************************
+********LOKACIJA**************
+****************************/
+.lokacija{background-color: white;}
+.adresa {
+    line-height: 200%;
+    text-align: center;
+}
+.adresa h2 {
+    padding-bottom: 40px;
+}
+.karta {
+   text-align: center;
+   padding-top: 40px; 
+   
+}
+iframe {
+    width: 900px;  
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e7e7;  
+            box-shadow: 2px 2px 2px 2px #e7e7e7;
+}
+/****************************
+********FOOTER**************
+****************************/
+footer {
+     background-color: #333;
+     padding: 50px;
+     font-size: 80%;
+ }
+ .footer-nav {
+     list-style: none;
+     float: left;
+ }
+ .social-links {
+     list-style: none;
+     float: right;
+ }
+ .footer-nav li,
+ .social-links li {
+     display: inline-block;
+     margin-right: 20px;
+
+ }
+ .footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: rgb(51, 204, 204);
+   
+}
+.footer-nav li,
+.social-links li {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.footer-nav li:hover,
+.social-links li:hover {
+     -webkit-transform: scale(1.2);
+             transform: scale(1.2);
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 120%;
+}
+.facebook:hover,
+.facebook:active {
+    color:#3b5998;
+}
+.instagram:hover,
+.instagram:active { 
+color:#c32aa3;
+}
+.youtube:hover,
+.youtube:active 
+{color:red;}
+
+
+.facebook,
+.instagram,
+.youtube {-webkit-transition: color 0.2s;transition: color 0.2s;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    
+    margin-top: 20px;
+}
+
+
+/**************************
+*********ANIMATIONS********
+**************************/
+.js--wp1,
+.js--wp2,
+.js--wp3,
+#js--wp4,
+.js--wp5 {opacity: 0;}
+.js--wp1.animated,
+.js--wp2.animated,
+.js--wp3.animated,
+#js--wp4.animated,
+.js--wp5.animated{opacity: 1;}
+

@@ -1,0 +1,290 @@
+/************************
+*****manje od 1148px*****
+************************/
+@media only screen and (max-width: 1200px) {
+    .hero {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    width: 1140px;
+    }
+    
+    
+
+   
+    .submit {padding-left: 35px;}
+    .facebook,
+    .instagram,
+    .youtube {font-size: 150%;}
+   
+}
+    /************************
+    *****768 - 1023*********
+    ************************/
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    
+    section {padding: 60px 0;}
+
+    .row,
+    .col {max-width: 100%;}
+    
+    .hero {
+    margin: 10% auto 0 auto;
+    text-align: center;
+    width: 100%;
+    }
+    
+    
+    .logo{
+        height: 60px;
+        margin-top: 35px;
+        margin-left: 5%;
+    }
+    .main-nav {margin-right: 5%;}
+    
+   
+    .submit {padding-left: 15px;}
+    
+    .facebook,
+    .instagram,
+    .youtube {font-size: 120%;}
+}
+/************************
+*********481-767*********
+************************/
+@media only screen and (max-width:767px){
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    .row,
+    .col {width: 100%;}
+
+    .hero {
+    margin: 3% auto 0 auto;
+    text-align: center;
+    width: 100%;
+    }
+    .hero h1 {font-size:150%; }
+    .btn{margin-top: 1%; }
+    
+    
+
+    .logo{height: 50px; margin-top: 1%;}
+    
+    /********NAV************/
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 3%;
+    }
+    .mobile-nav-icon i {
+        font-size: 150%;
+    }
+    
+    .invisible{display:none;}
+
+    .main-nav {
+        width: auto;
+        float: left;
+        margin-top: 2.5%;
+        margin-left: 70%;
+        position: fixed;
+        z-index: 9999;
+        
+    }
+    .main-nav li {
+        display: block;
+        text-align: center;
+        
+        
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        padding: 10px 0;
+        border: 0;
+        font-size: 100%;
+    }
+    .sticky {height: auto;}
+    
+    .sticky .mobile-nav-icon {margin-top: 2.5%;}
+    
+    .sticky .main-nav{
+        margin: 1.5% 0 auto 12%;
+        position: relative;
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{padding: 10px 0;}
+     
+    .sticky .mobile-nav-icon i {color: #555;}
+    
+    .sticky .logo {
+        margin-left: 3%;
+        height: 50px;
+    }
+    
+    .sistem-rada i {margin-bottom: 0;}
+    
+    .sistem-rada p {padding: 0 10%;}
+    
+    .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .elektro-img{order: 1;}
+    
+    .elektro-txt{order: 2;}
+    
+    .manualna-txt h3,
+    .elektro-txt h3{margin-top: 8%;}
+    .manualna-txt ul,
+    .elektro-txt ul {margin-bottom: 8%; }
+    
+    
+    
+    iframe {width: 100%;}
+
+    
+
+    label[for=ime],
+    label[for=email],
+    label[for=kako],
+    label[for=poruka]{margin-left: 8px;}
+    .submit {text-align: center;}
+
+   
+   
+    
+    footer {padding:50px 10px;}
+    footer ul {display: inline;}
+    footer .col {width: 100%;}
+    .footer-nav-box {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;text-align: center; padding-bottom: 20px;}
+    .social-links-box {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2; text-align: center;}
+    .footer-nav,
+    .social-links {float: none;}
+    .footer-nav li,
+    .social-links li {
+    float: none;
+    display:inline-block;
+    text-align: center;
+    }
+}
+   
+
+        /************************
+        *********0 - 480px*********
+        ************************/
+
+ @media only screen and (max-width: 480px) {
+    body {font-size: 14px;}
+    section {padding: 25px 0;}
+    .row,
+    .col {width: 100%;}
+    .hero {
+    margin: 45% auto 0 auto;
+    text-align: center;
+    width: 100%;
+    }
+    .btn-full:link{margin-right: 0;}
+    .btn{
+        margin-top: 15%;
+        display: block;
+    }
+    .logo {
+        height: 40px;
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+    .mobile-nav-icon {display: inline-block;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+    
+    .main-nav {
+        position: fixed;
+        float: left;
+        padding-right: 0;
+        margin-top: 3%;
+        margin-left: 40%;
+        z-index: 9999;
+    }
+    .main-nav li {
+        display:block; 
+        text-align: center;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        padding: 10px 0;
+        border: 0;
+        font-size: 100%;
+    }
+    .sticky {height: auto;}
+    .sticky .main-nav{
+        position: relative;
+        margin: 2% 0 auto 1%;
+    }
+    .sticky .logo{
+        height: 40px;
+        margin-left: 1.5%;
+        padding: 0;
+    }
+    .sticky .mobile-nav-icon {
+        display: inline-block;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        padding: 10px 0;
+    }
+    .sistem-rada{margin-top: 10%;}  
+    .manualna-txt ul{
+        display: block;
+        margin-left: 0;
+    }
+    
+
+    .kontakt-forma {
+        width: 100%;
+        padding:  10px;
+    }
+    label[for=ime],
+    label[for=email],
+    label[for=kako],
+    label[for=poruka]{margin-left: 3px;}
+    
+    
+    .submit {margin: 0 auto;}
+       
+    .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    footer {padding:50px 10px;}
+    footer ul {display: inline;}
+    footer .col {width: 100%;}
+    .footer-nav-box {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;text-align: center; padding-bottom: 20px;}
+    .social-links-box {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2; text-align: center;}
+    .footer-nav,
+    .social-links {float: none;}
+    .footer-nav li,
+    .social-links li {
+        float: none;
+        display:inline-block;
+        text-align: center;
+    }
+}
+
+

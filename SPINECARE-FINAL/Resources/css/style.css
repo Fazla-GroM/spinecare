@@ -6,20 +6,18 @@
     margin: 0 ;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    
+            box-sizing: border-box;    
 }
 
 html,
 body {
     color: rgb(85, 85, 85);
-    font-family:  'Raleway', sans-serif;
+    font-family:  'Raleway', 'sans-serif';
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;    
 }
 
 /****************************
@@ -27,7 +25,6 @@ body {
 ****************************/
 .row {
     /*1140px*/
-      
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -74,9 +71,7 @@ a:active {
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
-p {
-    text-align: center;
-}
+p {text-align: center;}
 /****************************
 ********BUTTONS**************
 ****************************/
@@ -115,12 +110,9 @@ input[type=submit] {
     background-color: rgb(44, 168, 168);
 }
 
-
-
 .btn-full:hover,
 .btn-full:active,
-input[type=submit] {
-    
+input[type=submit] {    
     border: 1px solid rgb(51, 204, 204);
     cursor: pointer;
 }
@@ -135,8 +127,8 @@ input[type=submit] {
 ********HEADER**************
 ****************************/
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/Resources/images/massage-background.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Resources/images/massage-background.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url(/Resources/images/massage-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(/Resources/images/massage-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -165,7 +157,6 @@ header {
 .btn {
     margin-top: 10%;
 }
-
 
 .logo {
     margin-top: 25px;
@@ -238,10 +229,8 @@ header {
 }
 
 .sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-    
-    color:#555;
-}
+.sticky .main-nav li a:visited {color:#555;}
+
 /********MOBILE NAV*******/
 
 .mobile-nav-icon {
@@ -283,9 +272,7 @@ header {
 ********usluge**************
 ****************************/
 .usluge {
-    
-    text-align: center;
-    
+    text-align: center;    
      background-color: #f4f4f4;
 }
 .usluge h2 {
@@ -340,9 +327,8 @@ header {
 /****************************
 ********KONTAKT**************
 ****************************/
-.kontakt {
-    background-color: #f4f4f4;
-}
+.kontakt {background-color: #f4f4f4;}
+
 .kontakt h2 {
     padding-bottom: 30px;
 }
@@ -366,9 +352,8 @@ textarea {height: 100px;}
 
 *:focus {outline: none;}
 
-
- .honeypot{display:none;}
- /****************************
+.honeypot{display:none;}
+/****************************
 ********ISKUSTVA**************
 ****************************/
 .iskustva {
@@ -411,13 +396,10 @@ cite img {
     line-height: 200%;
     text-align: center;
 }
-.adresa h2 {
-    padding-bottom: 40px;
-}
+.adresa h2 {padding-bottom: 40px;}
 .karta {
    text-align: center;
    padding-top: 40px; 
-   
 }
 iframe {
     width: 900px;  
@@ -490,15 +472,14 @@ color:#c32aa3;
 
 .facebook,
 .instagram,
-.youtube {-webkit-transition: color 0.2s;transition: color 0.2s;
+.youtube {
+    -webkit-transition: color 0.2s;transition: color 0.2s;
     font-size: 200%;
     cursor: pointer;
 }
-
 footer p {
     color: #888;
     text-align: center;
-    
     margin-top: 20px;
 }
 

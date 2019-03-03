@@ -7,19 +7,15 @@
     text-align: center;
     width: 1140px;
     }
-    
-    
-
-   
     .submit {padding-left: 35px;}
     .facebook,
     .instagram,
     .youtube {font-size: 150%;}
    
 }
-    /************************
-    *****768 - 1023*********
-    ************************/
+/************************
+*****768 - 1023*********
+************************/
 @media only screen and (max-width: 1023px) {
     body {font-size: 18px;}
     
@@ -34,15 +30,13 @@
     width: 100%;
     }
     
-    
     .logo{
-        height: 60px;
-        margin-top: 35px;
-        margin-left: 5%;
+    height: 60px;
+    margin-top: 35px;
+    margin-left: 5%;
     }
     .main-nav {margin-right: 5%;}
     
-   
     .submit {padding-left: 15px;}
     
     .facebook,
@@ -66,8 +60,6 @@
     .hero h1 {font-size:150%; }
     .btn{margin-top: 1%; }
     
-    
-
     .logo{height: 50px; margin-top: 1%;}
     
     /********NAV************/
@@ -145,12 +137,8 @@
     .elektro-txt h3{margin-top: 8%;}
     .manualna-txt ul,
     .elektro-txt ul {margin-bottom: 8%; }
-    
-    
-    
+        
     iframe {width: 100%;}
-
-    
 
     label[for=ime],
     label[for=email],
@@ -158,9 +146,6 @@
     label[for=poruka]{margin-left: 8px;}
     .submit {text-align: center;}
 
-   
-   
-    
     footer {padding:50px 10px;}
     footer ul {display: inline;}
     footer .col {width: 100%;}
@@ -177,11 +162,11 @@
 }
    
 
-        /************************
-        *********0 - 480px*********
-        ************************/
+/************************
+*********0 - 480px*********
+************************/
 
- @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     body {font-size: 14px;}
     section {padding: 25px 0;}
     .row,
@@ -250,7 +235,6 @@
         margin-left: 0;
     }
     
-
     .kontakt-forma {
         width: 100%;
         padding:  10px;
@@ -259,7 +243,6 @@
     label[for=email],
     label[for=kako],
     label[for=poruka]{margin-left: 3px;}
-    
     
     .submit {margin: 0 auto;}
        

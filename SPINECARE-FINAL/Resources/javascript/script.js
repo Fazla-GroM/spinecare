@@ -63,6 +63,7 @@ var bounceIn = new Waypoint({
 });
 
 /*************MOBILE NAVIGATION***********/
+
 var navButton = document.getElementById('js--mobile-nav-icon');
 var nav = document.getElementById('nav-bar');
 
